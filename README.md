@@ -1,8 +1,11 @@
-# Historical Flavour Mod
-Current Version: 1.27F Beta
-How to download:
-1. Click this link: https://github.com/SighPie/HFM/archive/Development.zip
-3. Unzip "HFM-Development.zip"
-4. Extract "HFM" Folder & "HFM.mod" into "Steam\steamapps\steamapps\common\Victoria 2\mod"
-5. Activate HFM in your Victoria 2 Launcher
-6. DO NOT ACTIVATE HPM, HFM IS MEANT TO BE RUN AS STANDALONE
+# Historical Flavour Mod - Project Alice Patch
+
+This repo aims to fix some common issues players experience when playing HFM in Project Alice. 
+
+Currently, the following changes have been made:
+
+- Fabric factory no longer requires dye. Instead, it requires wool now (alongside cotton which is unchanged).
+- Conversely, luxury clothing now requires dye. Same for luxury furniture. 
+- Sulphur RGO's have been made more common so the production of Ammunition (and other goods that depend on it like Artillery) becomes easier.
+
+# All credits go to the original HFM devs. Their original repo can be found [here](https://github.com/SighPie/HFM) 
