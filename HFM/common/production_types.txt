@@ -33,7 +33,7 @@ factory_template = {
 
 cheap_factory_template = {
 	efficiency = {
-		cement = 0.25 #if no cement, work at 75% efficiency #cost = £4/level
+		cement = 0.25 #if no cement, work at 75% efficiency #cost = ï¿½4/level
 	}
 	
 	owner = {
@@ -353,6 +353,7 @@ luxury_clothes_factory = {
 	input_goods = {   
 		regular_clothes = 0.9	#5.22
 		silk = 3.9		#39	total input+maint = 54
+		dye = 0.9
 	}
 	output_goods = luxury_clothes
 	value = 1			#65
@@ -364,6 +365,10 @@ luxury_clothes_factory = {
 		trigger = { trade_goods_in_state = silk }
 		value = 0.05
 	}
+	bonus = {
+		trigger = { trade_goods_in_state = dye }
+		value = 0.2
+	}
 }
 
 luxury_furniture_factory = {       
@@ -371,6 +376,7 @@ luxury_furniture_factory = {
 	input_goods = { 
 		furniture = 2	 	#45.08
 		tropical_wood = 7.5 #8.1	total input+maint = 53.18
+		dye = 1
 	}
 	output_goods = luxury_furniture 
 	value = 1.1			#64.9
@@ -381,6 +387,10 @@ luxury_furniture_factory = {
 	bonus = {
 		trigger = { trade_goods_in_state = tropical_wood }
 		value = 0.05
+	}
+	bonus = {
+		trigger = { trade_goods_in_state = dye }
+		value = 0.2
 	}
 }
 
@@ -649,7 +659,7 @@ fabric_factory = {
 	template = factory_template
 	input_goods = {     
 		cotton = 18		# 36
-		dye = 2			# 24 total input+maint = 70
+		wool = 4
 	}
 	output_goods = fabric
 	value = 45			#81
@@ -658,12 +668,7 @@ fabric_factory = {
 		value = 0.125
 	}
 	bonus = {
-		trigger = {
-			OR = {
-				has_building = dye_factory 
-				trade_goods_in_state = dye
-				}
-			}
+		trigger = { trade_goods_in_state = wool }
 		value = 0.125
 	}
 }
